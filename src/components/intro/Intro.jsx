@@ -13,7 +13,9 @@ export default function Intro() {
       strings: ["Developer", "Designer", "Content Creator"],
     });
   }, []);
-
+ let style = {
+   colorText: {color: "crimson"}
+ }
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -26,7 +28,7 @@ export default function Intro() {
           <h2> Hi There, I'm</h2>
           <h1>Todd Granados</h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            Freelance <span ref={textRef} style={style.colorText} ></span>
           </h3>
         </div>
         <a href="#portfolio">
