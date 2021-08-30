@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Designer", "Content Creator"],
+      strings: [" Developer",],
     });
   }, []);
  let style = {
@@ -20,7 +20,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="" />
+          <img src="assets/facepic.jpg" alt="" />
         </div>
       </div>
       <div className="right">
@@ -28,7 +28,7 @@ export default function Intro() {
           <h2> Hi There, I'm</h2>
           <h1>Todd Granados</h1>
           <h3>
-            Freelance <span ref={textRef} style={style.colorText} ></span>
+            Full Stack Web <span ref={textRef} style={style.colorText} ></span>
           </h3>
         </div>
         <a href="#portfolio">

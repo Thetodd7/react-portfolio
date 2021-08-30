@@ -1,5 +1,5 @@
 import "./topbar.scss"
-import {Person,Mail} from "@material-ui/icons"
+import {GitHub,LinkedIn,Mail,Person} from "@material-ui/icons"
 
 export default function Topbar({menuOpen,setMenuOpen}) {
     return (
@@ -7,17 +7,33 @@ export default function Topbar({menuOpen,setMenuOpen}) {
           <div className="wrapper">
               <div className="left">
 
-              <a href="#intro" className="logo">rocketman</a>
-              <div className="itemContainer">
-                <Person className="icon"/>
-                <span>555 555 555</span>
+              <a href="#intro" className="logo">Todd Granados</a>
+                    
+                    <div className="itemContainer"> 
+                    <Person className="icon"/>
+                    <span>555-555-5555</span>
+                    </div>
+                    
+                    
+                    <div className="itemContainer"> 
+                    <Mail className="icon"/>
+                    <span>Toddgranados@gmail.com</span>
+                    </div>
+                   
+                    <a href="https://github.com/Thetodd7" rel="noreferrer" target="_blank">
+                    <div className="itemContainer"> 
+                    <GitHub className="icon"/>
+                    <span>GitHub</span>
+                    </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/todd-granados-26a09b95/" >
+                    <div className="itemContainer"> 
+                    <LinkedIn className="icon"/>
+                    <span>LinkedIn</span>
+                    </div>
+                    </a>
               </div>
-              <div className="itemContainer">
-                <Mail className="icon"/>
-                <span>toddgranados@gmail.com</span>
-              </div>
-              </div>
-              
               <div className="right">
                   <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                     <span className="line1"></span>
