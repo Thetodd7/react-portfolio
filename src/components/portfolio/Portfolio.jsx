@@ -2,61 +2,45 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  FrontEnd,
+  BackEnd,
+  FullStack,
+  
 } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
-  const [data, setData] = useState([]);
-
-  const list = [
-    {
-      id: "featured",
-      title: "About Me",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
-  ];
-
-   useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-    }
-  }, [selected]);
+  const[selected, setSelected] = useState("front");
+  const[data, setData] = useState([]);
+  const list =[
+      {
+          id:"front",
+          title:"Front End",
+      },
+      {
+          id:"back",
+          title:"Back End",
+      },
+      {
+          id:"full",
+          title:"Full Stack",
+      },
+  ]
+  useEffect(()=>{
+      switch (selected) {
+              case "front":
+              setData(FrontEnd);
+              break;
+              case "back":
+                  setData(BackEnd);
+              break;
+              case "full":
+              setData(FullStack);
+              break;
+          default:
+              setData(FrontEnd);
+              break;
+      }
+  },[selected]);
 
 
   return (
