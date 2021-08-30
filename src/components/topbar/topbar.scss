@@ -30,6 +30,12 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+
+        @include mobile{
+          display: none;
+        }
+
+
         .icons {
           font-size: 18px;
           margin-right: 5px;
