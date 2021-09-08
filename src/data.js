@@ -86,3 +86,5 @@ export const FullStack = [
         "https://images.squarespace-cdn.com/content/v1/5ba708c065a707cc5b5706e1/1621196559719-CVPH36P9MXEHM0ONEVKL/Dark+Background+logo+%281%29.png?format=2500w",
     },
 ];
+//  syncing this with my portfolio 
+// data connected to my github  

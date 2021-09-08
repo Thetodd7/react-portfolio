@@ -1,6 +1,6 @@
 import "./topbar.scss"
-import {GitHub,LinkedIn,Mail,Person,Description} from "@material-ui/icons"
-
+import {GitHub,LinkedIn,Mail,Description} from "@material-ui/icons"
+// using sass - materialize icons
 export default function Topbar({menuOpen,setMenuOpen}) {
     return (
         <div className={"topbar " + (menuOpen && "active")}>

@@ -7,6 +7,8 @@ import Contact from "./components/contact/Contact";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+// the brain of the operations
+// allowing me to connect everything
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
