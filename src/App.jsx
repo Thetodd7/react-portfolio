@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import Footer from "./Footer";
 // the brain of the operations
 // allowing me to connect everything
 
@@ -23,6 +24,7 @@ function App() {
         <Testimonials />
         <Contact />
       </div>
+      <Footer/>
     </div>
   );
 }
