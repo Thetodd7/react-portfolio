@@ -9,6 +9,7 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -30,11 +31,11 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+        color: $mainColor;
 
-        @include mobile{
+        @include mobile {
           display: none;
         }
-
 
         .icons {
           font-size: 18px;
